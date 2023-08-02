@@ -65,6 +65,7 @@ void func(int i, int index){
         if(smt(1,&temp_map[0][0])) break;
     }
     for(int ii=mptr-1; ii>=0; ii--){ printf("%d ", path[ii]);}printf("\n"); mptr=0;//퍽 물고 놓는 무빙
+    map[a_arry[i][0]][a_arry[i][1]]=-9;//퍽을 넣었으니 고정 시킴
     while(1){
         for(int y=0; y<6; y++){for(int x=0; x<6; x++){
             if(map[y][x]==X)temp_map2[y][x]=X;
