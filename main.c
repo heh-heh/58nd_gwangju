@@ -53,6 +53,8 @@ int main(void){
 void func(int i, int index){
     if(i >= index) rr;
     int temp_map[6][6]={0};
+    int temp_map2[6][6]={0};
+    
     while(1){
         for(int y=0; y<6; y++){for(int x=0; x<6; x++){
             if(map[y][x]==X)temp_map[y][x]=X;
@@ -62,7 +64,18 @@ void func(int i, int index){
         for(int ii=0; ii<6; ii++){for(int j=0; j<6; j++)printf("%5d ",temp_map[ii][j]); printf("\n\n");}getchar();
         if(smt(1,&temp_map[0][0])) break;
     }
-    for(int ii=0; ii<mptr; ii++){ printf("%d ", path[ii]);}
+    for(int ii=mptr-1; ii>=0; ii--){ printf("%d ", path[ii]);}printf("\n"); mptr=0;//퍽 물고 놓는 무빙
+    while(1){
+        for(int y=0; y<6; y++){for(int x=0; x<6; x++){
+            if(map[y][x]==X)temp_map2[y][x]=X;
+            if(map[y][x] == a_arry[i][2])temp_map2[y][x]=-9;
+        }}
+        temp_map2[a_arry[i][0]][a_arry[i][1]]=1;temp_map2[1][2]=999;
+        //for(int ii=0; ii<6; ii++){for(int j=0; j<6; j++)printf("%5d ",temp_map2[ii][j]); printf("\n\n");}getchar();
+        if(smt(1,&temp_map2[0][0])) break;
+    }
+    for(int ii=mptr-1; ii>=0; ii--){ printf("%d ", path[ii]);}//퍽 놓고 돌아 오는 무빙
+
     mptr=0;
     getchar();
     func(i+1, index);
