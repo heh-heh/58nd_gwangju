@@ -156,7 +156,7 @@ void func(int i, int index){
 ```
 ## move 함수
 무브의 경우 로봇에 넣기 위한 것과 많이 다름
-```
+```cpp
 void move(int dir1, int p){
     if(p){
         printf("%d %d\n", dir1, now);getchar;
