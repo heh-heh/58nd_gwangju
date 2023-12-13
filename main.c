@@ -61,10 +61,6 @@ int main(void){
     for(int i=0; i<6; i++){for(int j=0; j<6; j++)printf("%3d", iii++); printf("\n\n");}
     getchar();
     func(0,1);
-    // for(int i=0; i<6; i++){for(int j=0; j<6; j++)printf("%5d ", smt_map[i][j]); printf("\n\n");}
-    // printf("%d\n", smt(1,&smt_map[0][0]));
-    // for(int ii=0; ii<=mptr; ii++){ printf("%d ", path[ii]);}printf("\n");
-    // for(int i=0; i<6; i++){for(int j=0; j<6; j++)printf("%5d ", smt_map[i][j]); printf("\n\n");}
 }
 void func(int i, int index){
     if(i >= index) rr;
