@@ -9,6 +9,9 @@
 -------
 ![Static Badge](https://img.shields.io/badge/C%EC%96%B8%EC%96%B4-%23808080?logo=C)
 
+맵 사진
+-------
+![enter image description here](https://github.com/heh-heh/58nd_gwangju/blob/main/a%EB%AC%B8%EC%A0%9C%EC%84%A4%EB%AA%852.png?raw=true)
 
 소스 설명
 -------
